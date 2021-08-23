@@ -3,15 +3,15 @@
 <script src="https://kit.fontawesome.com/6d173168d3.js" crossorigin="anonymous"></script>
 
 ## Personal Information
-Surname(s) / First name(s): **Write down your full name here**
+Surname(s) / First name(s): Luo / Andy
 
-Email(s): [youremail(at)domain(dot)com](mailto:youremail@domain.com)
+Email(s): [luoa22(at)mcmaster(dot)ca](mailto:luoa22@mcmaster.ca)
 
-Date of birth: Write your date of birth here
+Date of birth: July 3, 2003
 
 ### About Me
 
-Write a few sentences describing you the best.
+I am a first year mcmaster computer science student.
 
 
 
