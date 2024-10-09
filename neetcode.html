@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Neetcode Courses</title>
 </head>
 <body>
+    <h1>Neetcode Courses</h1>
+    <p>Here, I will write down various insights I got from doing neetcode courses and leetcode challenges</p>
+
+        <h2>Neetcode Beginner DS and Algs</h2>
+            <h3>Arrays</h3>
+            <p>While doing a few of the leetcode challenges listed for static arrays, I realized an insight for dealing with an array where you want to remove certain values and return a smaller array.
+                We use two indexer's i and j, i is used to iterate through the list while j is used to define the end of your "good zone". <br>
+                Whenever i encounters something that belongs in the good zone, increment j by one and add it to the end of the good zone. <br>      
+                In hindsight this is only useful if you need to modify and return the input array with an int :P 
+            </p>
+            <ul>
+                <li><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">https://leetcode.com/problems/remove-duplicates-from-sorted-array/</a></li>
+                <li><a href="https://leetcode.com/problems/remove-element/">https://leetcode.com/problems/remove-element/</a></li>
+            </ul>
+            <p>When trying to keep track of the minimum value in a stack, instead of keeping track of the min overall, we should keep track of it in frames or snapshots. <br>
+                Every time we push something into the stack, we pair that value with the current minimum of the stack. So, if we pop the top element, the next top element has the prerecorded current min already!</p>
+            <ul>
+                <li><a href="https://leetcode.com/problems/min-stack/">https://leetcode.com/problems/min-stack/</a></li>
+            </ul>
     <a href="index.html">Home</a>
 </body>
 </html>
