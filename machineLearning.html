@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coursera Machine Learning</title>
 </head>
 <body>
-    <a href="index.html">Home</a>
+    <h1>Coursera Machine Learning notes</h1>
+        <p>Here, I will summarize what I've learned from the Coursera Machine learning specialization course in my own words. <br> 
+            By summarizing in my own words, I hope to be able to better digest and retain what I've learned</p>
+
+        <h2>Supervised Learning</h2>
+            <p>A Supervised learning algorithm is used when you have a labeled data set with feature target pairs. <br>
+                In Supervised learning, we feed this labeled data set to a learning algorithm that produces a model f that maps input features x to output predictions y-hat \(an estimation of target y\). <br>
+                The accuracy of model f to the training data is measured with cost function J and the ultimate goal of Supervised learning is to minimize measured error J such that model f can eventually produce accurate predictions. <br>
+                The main difference between f and J is that f is a function of features x, while J is a function of parameters w and b. To minimize J, we must optimally adjust the parameters w and b.
+            </p>
+
+            <h3>Common Supervised Learning Algorithms</h3>
+            <p>The two most common Supervised learning algorithms are Regression and classification.</p>
+            
+            <h4>Regression</h2>
+                <p>Regression is used to predict numerical quantities. Its prediction set is infinite and continuous. \(e.g. predicting property price given its size\)</p>
+                <p>Univariate linear regression is an example of a Supervised regression model. Its used to fit a line to a set of points</p>
+                <ul>
+                    <li>Its model is f_{w,b} = w*x + b.</li>
+                    <li>Its cost function J is known as average squared error 1/2m * sum i to m of (w*xi + b - yi)^2 </li>
+                    <li>To minimize J, we use Gradient descent:<br>
+                        Repeat until convergence (simultaneous replacement): <br>
+	                    w = w - learning rate * d/dw J(w,b) <br>
+	                    b = b - learning rate * d/db J(w,b)
+                    </li>
+                </ul>
+            
+            <h4>Classification</h2>
+                <p>Classification is used to predict categories. Its prediction set is finite and discrete. \(e.g. predicting if a tumor is malignant or benign given its size\) </p>
+
+        <h2>Unsupervised Learning</h2>
+            <p>An unsupervised learning algorithm is used when you have an unlabeled dataset of only features x and no target y  <br>
+                In unsupervised learning, we feed the unlabeled dataset to the algorithm and it mines data from it by extracting notable properties or structures in the data. 
+            </p>
+
+            <h3>Common Unsupervised Learning Algorithms</h3>
+                <h4>Clustering</h4>
+                    <p> Clustering is used to discover distinct categories/groups in an un-labeled by partitioning it based on a similarity/distance metric. <br>
+                        These groups should maximize intra-similarity and minimize inter-similarity. This is basically the un-supervised learning version of classification.</p>
+        <a href="index.html">Home</a>
 </body>
 </html>
